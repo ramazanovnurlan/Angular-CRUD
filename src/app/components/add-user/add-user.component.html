@@ -1,0 +1,47 @@
+<div class="center-content">
+    <mat-card class="example-card">
+
+        <div class="row">
+            <div class="col-8 offset-2">
+                <form [formGroup]="newUserForm" (ngSubmit)="onSubmit(newUserForm)">
+                    <mat-form-field appearance="fill">
+                        <mat-label>Name</mat-label>
+                        <input matInput [formControlName]="'name'" required>
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Email</mat-label>
+                        <input matInput [formControlName]="'email'" required>
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Gender </mat-label>
+                        <input matInput [formControlName]="'gender'" required>
+                    </mat-form-field>
+                    <br>
+
+                    <mat-form-field appearance="fill">
+                        <mat-label>Status </mat-label>
+                        <input matInput [formControlName]="'status'" required>
+                    </mat-form-field>
+                    <br>
+                    <!-- <section class="example-section">
+                        <label class="example-margin">Align:</label>
+                        <mat-radio-group [(ngModel)]="labelPosition">
+                            <mat-radio-button class="example-margin" value="Male">After</mat-radio-button>
+                            <mat-radio-button class="example-margin" value="Female">Before</mat-radio-button>
+                        </mat-radio-group>
+                    </section> -->
+                    <br>
+
+                    <a href="">
+                        <button mat-raised-button color="primary" type="submit">Create</button>
+                    </a>
+            </form>
+        </div>
+
+
+</div>
+
+</mat-card>
+</div>
